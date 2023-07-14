@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#main-chart {
+    margin: 0 auto;   
+}
+
+.content {
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+#tooltip {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(16, 15, 15);
+    opacity: 0.8;
+    color: white;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+}
+
+.inner-button-container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.button-container {
+    width: 188px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 12px;
+}
+  
+.buttons {
+    font-size: 1.2em;
+    border:none;
+    padding: 12px 17px;
+    border-radius: 12px;
+    background-color: rgb(225, 225, 225);
+    color: rgb(117, 115, 115);
+}
+
+.button-selected {
+    background-color: black;
+    color: rgb(237, 233, 233);
+  }
+  
+.next-button {
+    width: 1400px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 17px;
+    border-radius: 12px;
+    background-color: rgb(225, 225, 225);
+    color: rgb(117, 115, 115);
+    margin: 0 auto;
+    margin-top: 42px;
+}
+  
+.next-link {
+    text-decoration: none;  
+    font-size: 1em;
+    color: black;
+    border-radius: 12px;
+    background-color: rgb(225, 225, 225);
+    color: rgb(31, 31, 31);
+}
