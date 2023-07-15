@@ -141,7 +141,7 @@ const drawMap = (
     .selectAll("text")
     .data([null])
     .join("text")
-    .attr("y", -20)
+    .attr("y", -50)
     .style("font-size", "1.5em")
     .text(deathMap ? "Total Deaths" : "Total Cases");
   const legends = legendGroup
