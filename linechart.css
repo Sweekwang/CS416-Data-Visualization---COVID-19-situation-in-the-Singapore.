@@ -74,7 +74,7 @@ body {
 .next-button {
   width: 1400px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 12px 17px;
   border-radius: 12px;
   background-color: rgb(225, 225, 225);
