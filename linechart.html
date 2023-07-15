@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
+  <link rel="stylesheet" href="linechart.css">
+  <title>World Map of Covid-19 Cases and Deaths</title>
+</head>
+<body>
+  <div class="content">
+    <h1>COVID-19 situation in the Singapore.</h1>
+    <h2>Navigating the Pandemic: Singapore's COVID-19 Cases, Deaths, and Key Policy Momentsn</h2>
+    <p>The line graphs below illustrate the number of COVID-19 cases and deaths in Singapore, highlighting key moments and policies implemented by the government to 
+      manage the situation which includes Early Measures and Circuit Breake. Click on the play button belows to see cases changes over time and the key moments.</p> 
+  </div>
+  <div id="tooltip"></div>
+  <div id="event-log"></div>
+  <div id="line-chart"></div>
+  <div class="slidecontainer">
+    <button id="play-button">Play</button>
+    <input type="range" class="slider" id="date-range"/>
+  </div>
+  <div class="next-button">
+    <button class="buttons">
+      <a class="next-link" href="index.html">Back</a>
+    </button>
+    <button class="buttons">
+      <a class="next-link" href="scatterplot.html">Next</a>
+    </button>
+  </div>
+  <script src="./linechart.js"></script>
+</body>
+</html>

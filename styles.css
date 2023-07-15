@@ -52,7 +52,7 @@ body {
   }
   
 .next-button {
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     justify-content: flex-end;
     padding: 12px 17px;

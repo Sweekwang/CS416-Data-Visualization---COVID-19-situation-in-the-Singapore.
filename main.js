@@ -4,9 +4,13 @@ const caseDataUrl =
   "./data/data_cases_deaths_total_cases.csv";
 const topoUrl = "./data/countries-110m.json";
 
-const width = window.innerWidth;
+let width = window.innerWidth;
 const height = window.innerHeight * 0.8;
 const margin = { top: 50, right: 10, bottom: 10, left: 10 };
+
+if (width > 1400) {
+  width = 1400;
+}
 
 const getDeathColor = (totalDeath) => {
   switch (true) {
@@ -230,17 +234,11 @@ const main = async () => {
     .select("#main-chart")
     .append("svg")
     .attr("width", width)
-    .attr("height", height);
-
-  // const chartTitle = svg
-  //   .append("text")
-  //   .attr("x", width / 2)
-  //   .attr("y", 30)
-  //   .attr("text-anchor", "middle")
-  //   .style("font-size", "2em")
-  //   .style("font-family", "sans-serif")
-  //   .style("text-decoration", "underline")
-  //   .text("Overview of the Global Situation");
+    .attr("height", height)
+    .style("position", "relative")
+    .style("left", "50%")
+    .style("top", "50%")
+    .style("transform", "translate(-50%, 0%)");
 
   const mapBound = svg.append("g");
 
