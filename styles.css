@@ -1,14 +1,15 @@
 body {
     margin: 0;
+    padding: 0 28px;
     overflow-x: hidden;
-}
+  }
 
 #main-chart {
     margin: 0 auto;   
 }
 
 .content {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 38px;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 .inner-button-container {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 

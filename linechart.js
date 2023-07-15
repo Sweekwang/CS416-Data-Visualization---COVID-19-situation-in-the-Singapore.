@@ -43,7 +43,7 @@ const covidEvents = [
 
 let width = window.innerWidth;
 const height = window.innerHeight * 0.8;
-const margin = { top: 120, right: 100, bottom: 80, left: 120 };
+const margin = { top: 40, right: 100, bottom: 80, left: 120 };
 const tooltipCircleRadius = 3;
 
 if (width > 1400) {

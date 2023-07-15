@@ -12,28 +12,10 @@ body {
   color: rgb(0, 0, 0);
 }
 
-#play-button:hover {
-  background-color: rgb(87, 87, 87);
-  color: rgb(231, 231, 231);
-}
-
-
-.center-svg {
-  max-width: 1400px;
-  margin: 0 auto;   
-  background-color: red;
-}
-
-.line-chart {
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;   
-}
 
 .content {
   max-width: 1400px;
   margin: 0 auto;
-  margin-bottom: 12px;
 }
 
 #tooltip {
@@ -49,20 +31,6 @@ body {
   pointer-events: none;
 }
 
-#event-log {
-  width: 300px;
-  position: absolute;
-  z-index: 10;
-  visibility: hidden;
-  padding: 10px;
-  border-radius: 5px;
-  background: white;
-  opacity: 0.8;
-  color: rgb(20, 20, 20);
-  pointer-events: none;
-  font-size: 1.3em;
-}
-
 .tick text {
   font-size: 1.4em;
 }
@@ -74,7 +42,7 @@ body {
 .next-button {
   max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 12px 17px;
   border-radius: 12px;
   background-color: rgb(225, 225, 225);
@@ -107,12 +75,11 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
+  width: 100%; /* Full-width */
   height: 25px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */

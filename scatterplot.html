@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
+  <link rel="stylesheet" href="scatterplot.css">
+  <title>COVID-19 in Singapore</title>
+</head>
+<body>
+<div class="content">
+  <h1>COVID-19 situation in the Singapore.</h1>
+  <h2>COVID-19 Comparative Analysis: Singapore's Performance in Deaths, Cases and New Cases</h2>
+  <p>Gapminder is a dynamic and interactive data visualization tool that provides valuable insights into various global trends. 
+    In this particular Gapminder graph, the x-axis represents the number of deaths caused by COVID-19, while the size of each data 
+    point corresponds to the total number of cases reported in a specific country. The graph allows us to compare the performance of
+     Singapore with other countries in managing the pandemic. To highlight Singapore's position in the graph, the data points representing Singapore are 
+     displayed in a distinct red color. This color differentiation helps to easily identify Singapore's data amidst the numerous other countries plotted on the graph.</p>
+</div>
+  <div id="tooltip"></div>
+  <div id="chart"></div>
+  <div class="slidecontainer">
+    <button id="play-button">Play</button>
+    <input type="range" class="slider" id="date-range"/>
+  </div>
+  <div class="next-button">
+    <button class="buttons">
+      <a class="next-link" href="linechart.html">Back</a>
+    </button>
+  </div>
+  <script src="scatterplot.js"></script>
+</body>
+</html>
